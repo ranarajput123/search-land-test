@@ -5,8 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start:dev": "concurrently \"yarn workspace server start:dev\" \"yarn workspace client start\"",
+    "start:dev": "concurrently \"yarn workspace server start:dev\" \"yarn workspace client start:dev\"",
     "lint": "concurrently \"yarn workspace server lint\" \"yarn workspace client lint\"",
+    "format": "concurrently \"yarn workspace server format\" \"yarn workspace client format\"",
     "setup:env": "concurrently \"yarn workspace server setup:env\" \"yarn workspace client setup:env\""
   },
   "workspaces": [

@@ -1,8 +1,8 @@
 import { QueryClientProvider } from '@tanstack/react-query';
 import './App.css';
 import User from './containers/user';
-import { trpc } from './trpc';
 import { useApp } from './useApp';
+import { trpc } from './trpc';
 function App() {
   const { queryClient, trpcClient } = useApp();
   return (

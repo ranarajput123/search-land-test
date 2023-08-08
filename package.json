@@ -1,0 +1,33 @@
+{
+  "name": "search-land-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:dev": "concurrently \"yarn workspace server start:dev\" \"yarn workspace client start\"",
+    "lint": "concurrently \"yarn workspace server lint\" \"yarn workspace client lint\"",
+    "setup:env": "concurrently \"yarn workspace server setup:env\" \"yarn workspace client setup:env\""
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.1"
+  },
+  "dependencies": {
+    "@types/node": "^20.4.8",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.1.6"
+  }
+}

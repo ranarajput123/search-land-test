@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "../.eslintrc.json",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "no-debugger": "off",
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts"]
+    }
+  ],
+  "plugins": ["react", "import"]
+}
